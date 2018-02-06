@@ -918,9 +918,11 @@
                             unit: $("#add_unit").val(),
                             user_id: $("#add_user_id").val()
                         };
-                        userdetails.Addresses.push(Address);
-                        $("#addaddress").remove();
-                        $("#saveaddresses").append(AddressToOption(Address) + '<OPTION VALUE="addaddress" ID="addaddress">never shows ADD ADDRESS</OPTION>');
+                        if(IsAddressUnique(userdetails.Addresses, Address.id)) {
+                            userdetails.Addresses.push(Address);
+                            $("#addaddress").remove();
+                            $("#saveaddresses").append(AddressToOption(Address) + '<OPTION VALUE="addaddress" ID="addaddress">never shows ADD ADDRESS</OPTION>');
+                        }
                     }
                     userdetails["Orders"].unshift({
                         id: $("#receipt_id").text(),
@@ -934,6 +936,13 @@
         } else {
             $("#loginmodal").modal("show");
         }
+    }
+
+    function IsAddressUnique(Addresses, ID){
+        for(var i=0; i<Addresses.length; i++){
+            if(Addresses[i].id == ID){return false;}
+        }
+        return true;
     }
 
     if (!Date.now) {
@@ -1663,6 +1672,12 @@
             $("#saveaddresses").val(0);
         }
         addresschanged("showcheckout");
+        if (userdetails["Addresses"].length == 1) {
+            setTimeout(function () {
+                $("#saveaddresses").val(userdetails["Addresses"][0].id);
+                addresschanged("showcheckout");
+            }, 100);
+        }
         var HTML = $("#checkoutaddress").html();
         HTML = HTML.replace('class="', 'class="corner-top ');
         var needscreditrefresh = false;

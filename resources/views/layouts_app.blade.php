@@ -56,10 +56,10 @@
     <body>
         <div ID="loading" class="fullscreen grey-backdrop dont-show"></div>
         <div class="list-group-item container-fluid bg-danger shadow">
-            <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-sm bg-transparent">
+            <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-sm bg-transparent" ONCLICK="$('#dropdown-menu').toggle();">
                 <i class="fa fa-bars text-white"></i>
             </button>
-            <ul class="dropdown-menu dropdown-menu-left">
+            <ul class="dropdown-menu dropdown-menu-left" ID="dropdown-menu">
                 @if(read("id"))
                     <SPAN class="loggedin profiletype profiletype1">
                         <?php
@@ -102,9 +102,12 @@
                     $ispass = \Hash::check("admin", $user["password"]);
                     echo "<BR><SPAN ONCLICK=" . '"' . "$('#login_email').val('" . $user["email"] . "');" . '"' . ">Admin email address: '" . $user["email"] . "'</SPAN>";
                     if ($ispass){
-                        echo  " <SPAN ONCLICK=" . '"' . "$('#login_password').val('admin');" . '"' . ">Password: 'admin'</SPAN>";
+                        echo  " - <SPAN ONCLICK=" . '"' . "$('#login_password').val('admin');" . '"' . ">Password: 'admin'</SPAN>";
                     } else {
-                        echo  " Admin password is unknown!";
+                        echo  " - Admin password is unknown!";
+                    }
+                    if (!isset($_SERVER['HTTPS']) or $_SERVER['HTTPS'] == 'off') {
+                        echo  " - HTTPS is not running!";
                     }
                     echo '</SPAN>';
                 }

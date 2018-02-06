@@ -421,6 +421,7 @@
                 $templine = '';// Reset temp variable to empty
             }
         }
+        Query("COMMIT;");
     }
 
     function isFileUpToDate($SettingKey, $Filename){
@@ -431,18 +432,25 @@
         }
     }
 
-    $con = connectdb();
-    $settings = first("SELECT * FROM `settings` WHERE keyname NOT IN (SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='" . $GLOBALS["database"] . "') AND keyname NOT IN ('lastSQL', 'menucache')", false);
-    foreach($settings as $ID => $Value){
-        $settings[$Value["keyname"]] = $Value["value"];
-        unset($settings[$ID]);
+    function loadsettings(){
+        $settings = first("SELECT * FROM `settings` WHERE keyname NOT IN (SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='" . $GLOBALS["database"] . "') AND keyname NOT IN ('lastSQL', 'menucache')", false);
+        foreach($settings as $ID => $Value){
+            $settings[$Value["keyname"]] = $Value["value"];
+            unset($settings[$ID]);
+        }
+        return $settings;
     }
+
+    $con = connectdb();
+    $settings = loadsettings();
 
     define("debugmode", $GLOBALS["settings"]["debugmode"]);
     if (isFileUpToDate("lastSQL", $Filename)) {
         $lastSQLupdate = getsetting("lastSQL", "0");
         $lastFILupdate = filemtime($Filename);
         importSQL($Filename);
+        $con = connectdb();
+        $settings = loadsettings();
         setsetting("lastSQL", $lastFILupdate);
         echo '<DIV CLASS="red">' . $lastSQLupdate . ' SQL was out of date, imported AI.sql on ' . $lastFILupdate . '</DIV>';
     }

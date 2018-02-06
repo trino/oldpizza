@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 06, 2018 at 07:41 PM
+-- Generation Time: Feb 06, 2018 at 08:08 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -395,7 +395,7 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`id`, `keyname`, `value`) VALUES
-(1, 'lastSQL', '1495549190'),
+(1, 'lastSQL', '1517942488'),
 (20, 'orders', '1487775876'),
 (24, 'menucache', '1493733784'),
 (25, 'useraddresses', '1491932853'),
@@ -796,7 +796,7 @@ ALTER TABLE `restaurants`
 -- AUTO_INCREMENT for table `settings`
 --
 ALTER TABLE `settings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1596;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1598;
 
 --
 -- AUTO_INCREMENT for table `shortage`
