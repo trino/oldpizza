@@ -10,9 +10,12 @@
     color: #999;
 }
 
+.card-block{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 .input_right {
-
     width: 84%;
     float: right;
     border: 0 solid #c8c8c8 !important;
