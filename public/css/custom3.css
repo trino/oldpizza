@@ -22,6 +22,10 @@
     opacity: 1;
 }
 
+input[type=checkbox]{
+    margin-top: 0px !important;
+}
+
 input, select, textarea {
     background: transparent !important;
     border-radius: 0 !important;
