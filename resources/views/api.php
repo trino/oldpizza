@@ -384,6 +384,12 @@
         return insertdb("settings", array("keyname" => $Key, "value" => $Value), "keyname");
     }
 
+    function millitime() {
+        $microtime = microtime();
+        $comps = explode(' ', $microtime);
+        return sprintf('%d%03d', $comps[1], $comps[0] * 1000);
+    }
+
     function getsetting($Key, $Default = ""){
         if (!enum_tables("settings")) {
             return $Default;

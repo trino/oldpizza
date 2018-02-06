@@ -100,6 +100,16 @@
                     echo '<SPAN TITLE="This will not show on the live server">&emsp;LOCAL IP IS: <B>' . $_SERVER['SERVER_ADDR'] . "</B> ROUTE NAME IS: <B>" . $routename . '</B>';
                     $user = first("SELECT * FROM users WHERE profiletype = 1");
                     $ispass = \Hash::check("admin", $user["password"]);
+
+                    $currtime = millitime();
+                    $lasttime = getsetting("lastupdate", 0);
+                    $delay = $currtime-$lasttime;
+                    echo " - CurrTime: " . $currtime . " - LastTime: " . $lasttime . " - Time Between: " . $delay;
+                    if($delay < 1000){
+                        echo " - Likely refreshed!";
+                    }
+                    setsetting("lastupdate", $currtime);
+
                     echo "<BR><SPAN ONCLICK=" . '"' . "$('#login_email').val('" . $user["email"] . "');" . '"' . ">Admin email address: '" . $user["email"] . "'</SPAN>";
                     if ($ispass){
                         echo  " - <SPAN ONCLICK=" . '"' . "$('#login_password').val('admin');" . '"' . ">Password: 'admin'</SPAN>";
