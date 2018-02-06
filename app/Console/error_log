@@ -1,0 +1,5 @@
+[15-Nov-2016 03:42:04 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Kernel' not found in /home/londonpizza/public_html/app/Console/Kernel.php on line 9
+[21-Nov-2016 02:10:10 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Kernel' not found in /home/londonpizza/public_html/app/Console/Kernel.php on line 9
+[24-Nov-2016 18:18:05 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Kernel' not found in /home/londonpizza/public_html/app/Console/Kernel.php on line 9
+[29-Nov-2016 20:20:36 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Kernel' not found in /home/londonpizza/public_html/app/Console/Kernel.php on line 9
+[01-Dec-2016 03:37:05 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Foundation\Console\Kernel' not found in /home/londonpizza/public_html/app/Console/Kernel.php on line 9

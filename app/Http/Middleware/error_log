@@ -1,0 +1,4 @@
+[16-Nov-2016 01:54:59 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/londonpizza/public_html/app/Http/Middleware/EncryptCookies.php on line 8
+[16-Nov-2016 02:58:22 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/londonpizza/public_html/app/Http/Middleware/VerifyCsrfToken.php on line 8
+[31-Dec-2016 08:24:38 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Cookie\Middleware\EncryptCookies' not found in /home/londonpizza/public_html/app/Http/Middleware/EncryptCookies.php on line 8
+[31-Dec-2016 08:24:51 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Foundation\Http\Middleware\VerifyCsrfToken' not found in /home/londonpizza/public_html/app/Http/Middleware/VerifyCsrfToken.php on line 8

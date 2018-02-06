@@ -1,0 +1,3 @@
+[15-Nov-2016 21:39:28 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/londonpizza/public_html/app/Console/Commands/Inspire.php on line 9
+[24-Nov-2016 11:17:26 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/londonpizza/public_html/app/Console/Commands/Inspire.php on line 9
+[31-Dec-2016 14:12:24 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Console\Command' not found in /home/londonpizza/public_html/app/Console/Commands/Inspire.php on line 9

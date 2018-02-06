@@ -1,0 +1,6 @@
+[15-Nov-2016 21:40:02 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Routing\Controller' not found in /home/londonpizza/public_html/app/Http/Controllers/Controller.php on line 10
+[16-Nov-2016 04:10:16 Canada/Eastern] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/londonpizza/public_html/app/Http/Controllers/HomeController.php on line 13
+[31-Dec-2016 20:09:25 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Routing\Controller' not found in /home/londonpizza/public_html/app/Http/Controllers/Controller.php on line 10
+[31-Dec-2016 20:10:12 Canada/Eastern] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/londonpizza/public_html/app/Http/Controllers/HomeController.php on line 13
+[21-Jan-2017 13:47:17 Canada/Eastern] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/londonpizza/public_html/app/Http/Controllers/AuthController.php on line 10
+[18-Feb-2017 05:46:38 Canada/Eastern] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/londonpizza/public_html/app/Http/Controllers/AuthController.php on line 10

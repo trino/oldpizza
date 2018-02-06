@@ -1,0 +1,7 @@
+[15-Nov-2016 03:41:22 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Foundation\Http\Kernel' not found in /home/londonpizza/public_html/app/Http/Kernel.php on line 8
+[15-Nov-2016 03:41:29 Canada/Eastern] PHP Fatal error:  Class 'View' not found in /home/londonpizza/public_html/app/Http/routes.php on line 24
+[20-Nov-2016 23:20:15 Canada/Eastern] PHP Fatal error:  Class 'View' not found in /home/londonpizza/public_html/app/Http/routes.php on line 24
+[22-Nov-2016 01:52:38 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Foundation\Http\Kernel' not found in /home/londonpizza/public_html/app/Http/Kernel.php on line 8
+[24-Nov-2016 18:13:13 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Foundation\Http\Kernel' not found in /home/londonpizza/public_html/app/Http/Kernel.php on line 8
+[28-Nov-2016 16:25:18 Canada/Eastern] PHP Fatal error:  Class 'Illuminate\Foundation\Http\Kernel' not found in /home/londonpizza/public_html/app/Http/Kernel.php on line 8
+[28-Nov-2016 23:40:42 Canada/Eastern] PHP Fatal error:  Class 'View' not found in /home/londonpizza/public_html/app/Http/routes.php on line 24

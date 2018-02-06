@@ -1,0 +1,37 @@
+0,1,2,3,6,7,8,12,14,16,19,21,23,28,29: success
+9: remove "on both the panzerotties." and it succeeds
+
+
+
+
+
+4: fails, olives isn't a topping (green or black is). triple bacon not recognized as it comes before the word pizza
+5: fails due to user error: they need to say wings otherwise it doesn't know where the pizza ends, and chicken counts as a topping
+
+10: fails
+11: fails due to user error: the toppings need to go after the keyword
+
+13: fails due to too many typos and shortforms. Only 2 words are actually valid
+
+15: fails due to user error. Hawaiian cheese is not enough to work off of. 2L drink isn't either. Nor is "wings extra dip". This would fail with a human.
+17: fails due to user error. They need to say pizza
+18: fails due to user error. They need to say dip
+
+20: fails, they need to say pizza, cheese sticks aren't in the database
+
+22: fails "on the side" will not work, they need to say dips
+
+24: fails, none of the order is in the database
+25: salad fails
+26: fails due to user error: all toppings isn't possible. Extra large fails to be detected
+27: fails
+
+30: fails on the drink
+31: fails, it can't split 15 up. Cust must order what is in the system
+32: fails on the water
+33: fails, the system can't recognize 2 items of 3. Only each one separately, I don't know where the salad is coming from
+
+keyword searches need to remove items that have keywords other than the primary
+
+
+s$started

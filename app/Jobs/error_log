@@ -1,0 +1,5 @@
+[15-Nov-2016 03:40:51 Canada/Eastern] PHP Fatal error:  Trait 'Illuminate\Bus\Queueable' not found in /home/londonpizza/public_html/app/Jobs/Job.php on line 20
+[15-Nov-2016 21:54:55 Canada/Eastern] PHP Fatal error:  Trait 'Illuminate\Bus\Queueable' not found in /home/londonpizza/public_html/app/Jobs/Job.php on line 20
+[20-Nov-2016 09:55:02 Canada/Eastern] PHP Fatal error:  Trait 'Illuminate\Bus\Queueable' not found in /home/londonpizza/public_html/app/Jobs/Job.php on line 20
+[23-Nov-2016 14:29:26 Canada/Eastern] PHP Fatal error:  Trait 'Illuminate\Bus\Queueable' not found in /home/londonpizza/public_html/app/Jobs/Job.php on line 20
+[28-Nov-2016 08:45:22 Canada/Eastern] PHP Fatal error:  Trait 'Illuminate\Bus\Queueable' not found in /home/londonpizza/public_html/app/Jobs/Job.php on line 20

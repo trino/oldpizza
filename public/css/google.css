@@ -1,0 +1,7 @@
+/* https://google-developers.appspot.com/maps/documentation/javascript/places-autocomplete#style_autocomplete */
+
+body .pac-container{z-index:1100;font-family:inherit;margin-top:-2px;max-height:40vh;overflow:auto;margin-left:1px}body .pac-container:not(.pac-logo) .pac-item:last-of-type{border-bottom:0}body .pac-logo:after{height:28px;background-position:98%;background-color:#fafafa}body .pac-item{cursor:pointer;line-height:36px;padding-left:8px;border:1px solid #e6e6e6;border-width:0 0 1px}body .pac-icon{display:none}body .pac-item-query{padding-right:4px;color:#555}
+
+body .pac-item,body .pac-item-query,.navbar-nav>li>a,#order-tracker-order-receipt .order-tracker-order-receipt-title h3,.order-tracker-marker-bubble-text .order-tracker-marker-bubble-text-inner{font-size:14px}
+
+.pac-container,.left-sub-nav-bar li.nav-bar-divider,.order-tracker-modal-title{margin-bottom:16px}
