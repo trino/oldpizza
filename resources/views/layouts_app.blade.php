@@ -16,7 +16,7 @@
             }
             $scripts = webroot("public/scripts");
             $css = webroot("public/css");
-            $routename = Route::getCurrentRoute()->getPath();
+            $routename = Route::getCurrentRoute()->uri();
         ?>
 
         <script type="text/javascript">
@@ -28,7 +28,7 @@
             var redirectonlogin = false;
             var addresskeys = ["id", "value", "user_id", "number", "unit", "buzzcode", "street", "postalcode", "city", "province", "latitude", "longitude", "phone"];
             var userdetails = false;
-            var currentRoute = "<?= Route::getCurrentRoute()->getPath(); ?>";
+            var currentRoute = "<?= $routename ?>";
         </script>
 
         <meta charset="utf-8">
