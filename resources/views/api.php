@@ -476,7 +476,7 @@
     }
 
     //returns the current date/time
-    function now($totime = false, $now = false){
+    function my_now($totime = false, $now = false){
         if (!$now) {
             $now = time();
             if (read("profiletype") == 1 && isset($_GET["time"])) {

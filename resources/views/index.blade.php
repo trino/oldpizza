@@ -21,7 +21,7 @@
                             file_put_contents($menucache_filename, $menu);
                             setsetting("menucache", filemtime($menucache_filename));
                         }
-                        echo '<!-- menu cache generated at: ' . now() . ' --> ' . $menu;
+                        echo '<!-- menu cache generated at: ' . my_now() . ' --> ' . $menu;
                     }
                 ?>
                 <div class="col-lg-3 col-md-12 bg-inverse" style="background: #dcdcdc !important;">

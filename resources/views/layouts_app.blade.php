@@ -133,7 +133,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <a CLASS="btn btn-sm text-muted" href="<?= webroot("help"); ?>"> <i style="font-size: 1rem !important;" class="fa fa-question-circle icon-width"></i>More Info</a>
-                        @if(isset($_GET["time"])) <SPAN id="servertime" CLASS="text-muted pull-right">Server time: <?= now(); ?></SPAN> @endif
+                        @if(isset($_GET["time"])) <SPAN id="servertime" CLASS="text-muted pull-right">Server time: <?= my_now(); ?></SPAN> @endif
                     </div>
                 </div>
             </div>

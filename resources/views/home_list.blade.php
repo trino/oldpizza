@@ -39,9 +39,9 @@
         return $text;
     }
     function touchtable($table){
-        setsetting($table, now(true));
+        setsetting($table, my_now(true));
         if(in_array($table, array("toppings", "wings_sauce", "menu", "additional_toppings"))){
-            setsetting("menucache", now(true));
+            setsetting("menucache", my_now(true));
         }
     }
     function appendSQL($CurrentSQL, $AppendSQL){

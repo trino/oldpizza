@@ -56,7 +56,7 @@ class AuthController extends Controller {
 
     //handles all authentication actions (login, logout, register, verify, forgot password)
     public function login($action= false, $email = false) {
-        $now = now(true);//seconds from epoch date
+        $now = my_now(true);//seconds from epoch date
         $attempttime = 300;//5 minutes
         if(!count($_POST)){$_POST = $_GET;}
         if(!$action){$action = $_POST["action"];}
@@ -146,7 +146,7 @@ class AuthController extends Controller {
                         if($RequireAuthorization) {
                             $_POST["authcode"] = $this->guidv4();
                         }
-                        $_POST["created_at"] = now();
+                        $_POST["created_at"] = my_now();
                         $_POST["updated_at"] = 0;
 
                         $_POST["password"] = \Hash::make($_POST["password"]);

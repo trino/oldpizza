@@ -123,7 +123,7 @@ class HomeController extends Controller {
             $info["restaurant_id"] = $restaurant["id"];
             */
 
-            $info["placed_at"] = now();
+            $info["placed_at"] = my_now();
             unset($info["name"]);
             unset($info["creditcard"]);
             unset($info["restaurant"]);

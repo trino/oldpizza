@@ -36,7 +36,7 @@
 
                 $user["name"] = $_POST["name"];
                 $user["phone"] = $_POST["phone"];
-                $user["updated_at"] = now();
+                $user["updated_at"] = my_now();
 
                 insertdb("users", $user);//save
                 echo "Data saved";
